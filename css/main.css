@@ -188,6 +188,7 @@ body {
   border-radius: 4px;
   color: #088178;
   background-color: #fddde4;
+  cursor: default;
 }
 
 #feature .fe-box:nth-child(2) h6 {
@@ -237,6 +238,10 @@ body {
 
 #product1 .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro .addbutton:hover {
+  background-color: #d6f5da;
 }
 
 #product1 .pro .pro-descriptin {
@@ -380,6 +385,7 @@ body {
   background-position: center;
   padding: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 #banner3 h2 {
@@ -450,4 +456,91 @@ body {
   white-space: nowrap;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+footer .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .instal .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .instal img {
+  margin: 10px 0 15px 0;
+  cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #088178;
+}
+
+footer .copyright p {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+footer strong {
+  color: #222;
+}
+
+/* Start Media Query */
+
+@media (max-widht: 799px) {
+  #navbar {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e3e3;
+  }
 }
